@@ -16,7 +16,7 @@ class FlyingGorilla < Formula
 
   def install
     STDOUT.puts "stable:", stable.inspect
-    bin.install stable.url.split("/")[-1] => "flying-gorilla"
+    bin.install stable.url.split("/")[-1].split("-")[0..-2].join("-") => "flying-gorilla"
   end
 
   test do
