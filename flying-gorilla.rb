@@ -1,15 +1,15 @@
 class FlyingGorilla < Formula
   desc "FlyingGorilla"
   homepage "https://github.com/seemiller/flying-gorilla/"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   if OS.mac?
     url "https://github.com/seemiller/flying-gorilla/releases/download/#{version}/flying-gorilla-darwin-amd64-#{version}.tar.gz"
-    sha256 "70d3d980ea5d78a1c9152cbf7d64f70bfe0769ef276885b1ddf853317dc833ea"
+    sha256 "6a848a7311de780705ecdb1c667cbf67ad5617758f72902a68df045850f6af18"
   elsif OS.linux?
     url "https://github.com/seemiller/flying-gorilla/releases/download/#{version}/flying-gorilla-linux-amd64-#{version}.tar.gz"
-    sha256 "0d7cb1843d8090157c506f87321cbff0b85dbfe97cd3b2c38a87c4aaab427c47"
+    sha256 "4bb403b75565ac727c955c8d2f462e390956d5161bf98039d4ad960bf55781cc"
   end
 
   depends_on :arch => :x86_64
