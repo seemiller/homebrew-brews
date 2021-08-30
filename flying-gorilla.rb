@@ -15,7 +15,7 @@ class FlyingGorilla < Formula
   depends_on :arch => :x86_64
 
   def install
-    STDOUT.puts "stable url:", stable.url
+    STDOUT.puts "stable:", stable.inspect
     bin.install stable.url.split("/")[-1] => "flying-gorilla"
   end
 
